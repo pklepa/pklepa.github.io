@@ -6,6 +6,7 @@ const theme = {
   font: "Dosis",
   primary: "#333",
   secondary: "#999",
+  highlight: "#f8efd4",
 };
 
 const GlobalStyle = createGlobalStyle`
