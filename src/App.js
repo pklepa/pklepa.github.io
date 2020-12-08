@@ -2,7 +2,8 @@ import React from "react";
 import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
 import { Reset } from "styled-reset";
 
-import Temp from "./views/Temp/Temp";
+import Temp from "./views/Temp";
+import Home from "./views/Home";
 
 const theme = {
   font: "Dosis",
@@ -23,8 +24,6 @@ const GlobalStyle = createGlobalStyle`
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
   width: 100%;
   min-height: 100vh;
@@ -38,7 +37,7 @@ function App() {
       <GlobalStyle />
 
       <Container>
-        <Temp />
+        <Home />
       </Container>
     </ThemeProvider>
   );
