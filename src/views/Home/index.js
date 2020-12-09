@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { Container, Logo } from "./styles";
 
@@ -9,7 +10,7 @@ function Home() {
     <Container exit="out" animate="in" initial="out" variants={pageTransition}>
       <Logo>pedro klepa</Logo>
       <h2>
-        Front-end JavaScript Developer || <a href="/temp">Go 2 temp</a>
+        Front-end JavaScript Developer || <Link to="/temp">Go 2 temp</Link>
       </h2>
     </Container>
   );
