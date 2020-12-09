@@ -1,19 +1,24 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
+  flex: 1;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  width: 100%;
-  height: 100%;
   background-color: transparent;
 
   span {
     text-align: center;
     line-height: 1.5em;
     margin-bottom: 20px;
+
+    a {
+      color: ${(props) => props.theme.highlight};
+    }
   }
 `;
 

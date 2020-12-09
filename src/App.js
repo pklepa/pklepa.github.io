@@ -1,9 +1,9 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
+// import { HashRouter } from "react-router-dom";
 import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
 import { Reset } from "styled-reset";
-
-import Temp from "./views/Temp";
-import Home from "./views/Home";
+import Routes from "./Routes";
 
 const theme = {
   font: "Dosis",
@@ -36,9 +36,11 @@ function App() {
       <Reset />
       <GlobalStyle />
 
-      <Container>
-        <Home />
-      </Container>
+      <BrowserRouter>
+        <Container>
+          <Routes />
+        </Container>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }

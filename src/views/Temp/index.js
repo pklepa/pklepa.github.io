@@ -3,10 +3,13 @@ import React from "react";
 import { Container, IconsContainer } from "./styles";
 import { GithubIcon, LinkedinIcon, MailIcon } from "../../components/Icons";
 
+import { pageTransition } from "../../utils/Animations";
+
 function Temp() {
   return (
-    <Container>
+    <Container exit="out" animate="in" initial="out" variants={pageTransition}>
       <span>
+        <a href="/">Go back Home</a> <br />
         Oops, it seems like you got here a little early. <br />
         You can still reach me through one of these:
       </span>
