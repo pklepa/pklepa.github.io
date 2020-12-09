@@ -5,13 +5,35 @@ import { Container, Logo } from "./styles";
 
 import { pageTransition } from "../../utils/Animations";
 
+import { motion } from "framer-motion";
+
 function Home() {
   return (
-    <Container exit="out" animate="in" initial="out" variants={pageTransition}>
-      <Logo>pedro klepa</Logo>
-      <h2>
-        Front-end JavaScript Developer || <Link to="/temp">Go 2 temp</Link>
-      </h2>
+    <Container>
+      <div className="top"></div>
+
+      <motion.div
+        className="middle"
+        exit="out"
+        animate="in"
+        initial="out"
+        variants={pageTransition}
+      >
+        <Logo>pedro klepa</Logo>
+        <h2>Front-end JavaScript Developer</h2>
+      </motion.div>
+
+      <motion.div
+        className="bottom"
+        initial={{ y: 100 }}
+        animate={{ y: 0 }}
+        exit={{ y: 100 }}
+      >
+        <Link to="about">About</Link>
+        <Link to="projects">Projects</Link>
+        <Link to="contact">Contact</Link>
+        <Link to="temp">Temp</Link>
+      </motion.div>
     </Container>
   );
 }
