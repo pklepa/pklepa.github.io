@@ -6,11 +6,10 @@ export const Container = styled(motion.div)`
 
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  width: 100%;
-  max-height: 100vh;
-  overflow-y: hidden;
+  align-items: center;
+
+  background-color: transparent;
 
   & > div {
     display: flex;
@@ -23,17 +22,56 @@ export const Container = styled(motion.div)`
   .middle {
     flex: 1;
     flex-direction: column;
-
-    h2 {
-      margin-top: 16px;
-
-      a {
-        color: ${(props) => props.theme.highlight};
-      }
-    }
   }
 
   .bottom {
+    position: relative;
+    border-top: 2px solid #333;
+
+    &::after {
+      position: absolute;
+      top: -14px;
+
+      content: "get social";
+      background-color: ${(props) => props.theme.primary};
+      padding: 4px 6px;
+      color: ${(props) => props.theme.secondary};
+      font-size: 14px;
+    }
+  }
+
+  p {
+    text-align: center;
+    line-height: 1.5em;
+  }
+
+  .e-mail {
+    color: ${(props) => props.theme.highlight};
+    font-size: 18px;
+    font-family: monospace;
+    text-decoration: none;
+    background-color: #333;
+    border-radius: 3px;
+    border: 1px solid ${(props) => props.theme.highlight};
+    padding: 8px 12px;
+    margin: 12px;
+  }
+
+  span {
+    opacity: 0.5;
+    margin: 20px 0;
+  }
+`;
+
+export const Navbar = styled.nav`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 10px 40px;
+
+  ul {
     a {
       color: ${(props) => props.theme.secondary};
       font-size: 20px;
@@ -61,7 +99,7 @@ export const Logo = styled.div`
   position: relative;
 
   font-family: "Big Shoulders Stencil Display", cursive;
-  font-size: 50px;
+  font-size: 24px;
   border-radius: 3px;
   z-index: 10;
 
@@ -72,7 +110,7 @@ export const Logo = styled.div`
     color: #f8efd5;
     background-color: ${(props) => props.theme.primary};
     border-radius: 3px;
-    padding: 10px 10px 14px;
+    padding: 4px 8px 8px;
   }
 
   &:hover {
@@ -83,15 +121,39 @@ export const Logo = styled.div`
   &::after {
     position: absolute;
     content: "";
-    top: calc(-1 * 3px);
-    left: calc(-1 * 3px);
+    top: calc(-1 * 2px);
+    left: calc(-1 * 2px);
     z-index: -1;
-    width: calc(100% + 3px * 2);
-    height: calc(100% + 3px * 2);
+    width: calc(100% + 2px * 2);
+    height: calc(100% + 2px * 2);
     background: linear-gradient(90deg, #222, #f8efd4, #222);
     background-size: 200% 200%;
     background-position: 0 -50%;
-    border-radius: calc(2 * 3px);
+    border-radius: calc(2 * 2px);
     animation: ${moveGradient} 8s ease-in-out infinite;
+  }
+`;
+
+export const IconsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    margin-right: 12px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  svg {
+    width: 40px;
+    color: ${(props) => props.theme.secondary};
+    transition: 400ms;
+
+    &:hover {
+      color: ${(props) => props.theme.highlight};
+    }
   }
 `;

@@ -30,6 +30,7 @@ function Home() {
         initial={{ y: 100 }}
         animate={{ y: 0 }}
         exit={{ y: 100 }}
+        transition={{ duration: 1, delay: 0.3 }}
       >
         <Link to="about">About</Link>
         <Link to="projects">Projects</Link>

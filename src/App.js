@@ -19,6 +19,10 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     font-size: 18px;  
   }
+
+  * {
+    box-sizing: border-box;
+  }
 `;
 
 const Container = styled.div`

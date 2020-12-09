@@ -3,6 +3,7 @@ import { Switch, Route, useLocation } from "react-router-dom";
 
 import Home from "./views/Home";
 import Temp from "./views/Temp";
+import Contact from "./views/Contact";
 
 import { AnimatePresence } from "framer-motion";
 
@@ -18,6 +19,10 @@ function Routes() {
 
         <Route path="/temp">
           <Temp />
+        </Route>
+
+        <Route path="/contact">
+          <Contact />
         </Route>
       </Switch>
     </AnimatePresence>
