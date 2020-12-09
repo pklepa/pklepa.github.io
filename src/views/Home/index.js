@@ -19,7 +19,9 @@ function Home() {
         initial="out"
         variants={pageTransition}
       >
-        <Logo>pedro klepa</Logo>
+        <Logo>
+          <h1>pedro klepa</h1>
+        </Logo>
         <h2>Front-end JavaScript Developer</h2>
       </motion.div>
 

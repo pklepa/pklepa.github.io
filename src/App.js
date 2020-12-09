@@ -7,7 +7,7 @@ import Routes from "./Routes";
 
 const theme = {
   font: "Dosis",
-  primary: "#333",
+  primary: "#222",
   secondary: "#999",
   highlight: "#f8efd4",
 };
