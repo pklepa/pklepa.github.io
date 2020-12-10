@@ -9,6 +9,7 @@ export const Tag = styled.div`
   align-items: center;
   padding: 3px 6px;
   margin-right: 6px;
+  margin-top: 10px;
 
   span {
     color: ${(props) => props.theme.highlight};

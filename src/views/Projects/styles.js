@@ -99,7 +99,6 @@ export const ProjectDescription = styled.div`
   h1 {
     color: ${(props) => props.theme.highlight};
     font-size: 22px;
-    margin-bottom: 10px;
   }
 
   p {
@@ -119,6 +118,7 @@ export const ProjectDescription = styled.div`
 
 export const IconsWrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 16px;
 `;
 
