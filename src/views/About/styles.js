@@ -22,7 +22,8 @@ export const Container = styled(motion.div)`
 
   .middle {
     flex: 1;
-    /* flex-direction: column; */
+    display: flex;
+    padding: 10px 0 30px;
 
     .bio {
       max-width: 500px;
@@ -46,6 +47,29 @@ export const Container = styled(motion.div)`
       margin-left: 50px;
       border-radius: 50%;
     }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+
+      .bio {
+        order: 2;
+      }
+
+      img {
+        margin-left: 0;
+        margin-bottom: 40px;
+      }
+    }
+
+    @media (max-width: 550px) {
+      .bio {
+        max-width: 300px;
+      }
+
+      img {
+        width: 150px;
+      }
+    }
   }
 
   .bottom {
@@ -61,6 +85,10 @@ export const Container = styled(motion.div)`
       padding: 4px 6px;
       color: ${(props) => props.theme.secondary};
       font-size: 14px;
+    }
+
+    @media (max-width: 550px) {
+      min-height: 60px;
     }
   }
 
