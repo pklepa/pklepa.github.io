@@ -22,7 +22,30 @@ export const Container = styled(motion.div)`
 
   .middle {
     flex: 1;
-    flex-direction: column;
+    /* flex-direction: column; */
+
+    .bio {
+      max-width: 500px;
+
+      h1 {
+        font-size: 24px;
+        font-family: "Big Shoulders Stencil Display", monospace;
+        color: ${(props) => props.theme.highlight};
+        text-align: center;
+
+        margin-bottom: 12px;
+      }
+
+      p {
+        text-align: left;
+      }
+    }
+
+    img {
+      width: 200px;
+      margin-left: 50px;
+      border-radius: 50%;
+    }
   }
 
   .bottom {

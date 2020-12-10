@@ -9,9 +9,10 @@ import {
   InstagramIcon,
 } from "../../components/Icons";
 
+import Img from "../../assets/images/pk_draw.jpeg";
 import { pageTransition } from "../../utils/Animations";
 
-function Contact() {
+function About() {
   return (
     <Container>
       <div className="top"></div>
@@ -23,21 +24,18 @@ function Contact() {
         initial="out"
         variants={pageTransition}
       >
-        <p>
-          Hey, I just met you and this is crazy! <br />
-          Here's my e-mail:
-        </p>
+        <div className="bio">
+          <h1>Who's this guy?</h1>
+          <p>
+            I'm a Brazilian / Italian aspiring front-end developer based in
+            Liverpool, UK. Bachelor of Science in Electrical Engineering, I have
+            for long enjoyed coding and design. After working the last two years
+            in the television industry as a project architect, I decided to
+            fully commit into web development going forwards in 2021.
+          </p>
+        </div>
 
-        <a
-          className="e-mail"
-          // target="_blank"
-          // rel="noreferrer"
-          href="mailto:pedro.klepa+dev@gmail.com?subject=Hello%20from%20your%20website"
-        >
-          <strong>pedro.klepa+dev@gmail.com</strong>
-        </a>
-
-        <p>Write me maybe.</p>
+        <img src={Img} alt="Profile" />
       </motion.div>
 
       <motion.div
@@ -78,4 +76,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default About;

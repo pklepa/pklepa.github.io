@@ -7,6 +7,7 @@ import { Navbar, Logo } from "./components/Navbar";
 import Home from "./views/Home";
 import Temp from "./views/Temp";
 import Contact from "./views/Contact";
+import About from "./views/About";
 
 function Routes() {
   const location = useLocation();
@@ -49,6 +50,10 @@ function Routes() {
 
           <Route path="/contact">
             <Contact />
+          </Route>
+
+          <Route path="/about">
+            <About />
           </Route>
         </Switch>
       </AnimatePresence>
