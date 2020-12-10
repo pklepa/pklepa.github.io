@@ -23,7 +23,8 @@ export const Container = styled(motion.div)`
   .middle {
     flex: 1;
     display: flex;
-    padding: 10px 0 30px;
+    flex-direction: column;
+    padding: 30px 0 50px;
   }
 
   .bottom {
@@ -77,10 +78,10 @@ export const IconsContainer = styled.div`
   }
 `;
 
-export const ProjectContainer = styled.div`
+export const ProjectContainer = styled(motion.div)`
   display: flex;
   align-items: center;
-  padding: 0 40px;
+  padding: 40px 40px;
 `;
 
 export const ProjectImage = styled.img`

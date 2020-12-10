@@ -35,62 +35,123 @@ function Projects() {
 
       <motion.div
         className="middle"
-        exit="out"
-        animate="in"
-        initial="out"
-        variants={pageTransition}
+        // exit="out"
+        // animate="in"
+        // initial="out"
+        // variants={pageTransition}
       >
-        <ControlArrow>
-          <ArrowLeftIcon />
-        </ControlArrow>
+        <ProjectContainer
+          exit={{
+            opacity: 0,
+            y: -30,
+            transition: { duration: 0.5 },
+          }}
+          animate={{
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.5 },
+          }}
+          initial={{
+            opacity: 0,
+            y: -30,
+            transition: { duration: 0.5 },
+          }}
+          // transition={{ delay: 1 }}
+        >
+          <ProjectImage
+            src="https://user-images.githubusercontent.com/22618438/101240729-055a0e80-36e9-11eb-893d-3b807437b5e1.png"
+            alt="Discord Clone"
+          />
+          <ProjectDescription>
+            <h1>Discount Discord</h1>
+            <IconsWrapper>
+              <Tag>
+                <ReactIcon />
+                <span>react</span>
+              </Tag>
+              <Tag>
+                <FirebaseIcon />
+                <span>firebase</span>
+              </Tag>
+              <Tag>
+                <StyledComponentsIcon />
+                <span>styled-components</span>
+              </Tag>
+              <Tag>
+                <FramerIcon />
+                <span>framer-motion</span>
+              </Tag>
+            </IconsWrapper>
+            <p>
+              A clone of Discord's user interface and some of its features such
+              as real-time chat, user authentication (Google account) and
+              distinct channel chat rooms.
+            </p>
 
-        <AnimatePresence>
-          <ProjectContainer>
-            <ProjectImage
-              src="https://user-images.githubusercontent.com/22618438/101240729-055a0e80-36e9-11eb-893d-3b807437b5e1.png"
-              alt="Discord Clone"
-            />
-            <ProjectDescription>
-              <h1>Discount Discord</h1>
-              <IconsWrapper>
-                <Tag>
-                  <ReactIcon />
-                  <span>react</span>
-                </Tag>
-                <Tag>
-                  <FirebaseIcon />
-                  <span>firebase</span>
-                </Tag>
-                <Tag>
-                  <StyledComponentsIcon />
-                  <span>styled-components</span>
-                </Tag>
-                <Tag>
-                  <FramerIcon />
-                  <span>framer-motion</span>
-                </Tag>
-              </IconsWrapper>
-              <p>
-                A clone of Discord's user interface and some of its features
-                such as real-time chat, user authentication (Google account) and
-                distinct channel chat rooms.
-              </p>
+            <div className="buttons-wrapper">
+              <Button href="https://github.com/pklepa/discord-clone">
+                View Code
+              </Button>
+              <Button href="https://pklepa.github.io/discord-clone/" primary>
+                See it Live
+              </Button>
+            </div>
+          </ProjectDescription>
+        </ProjectContainer>
 
-              <div className="buttons-wrapper">
-                <Button href="https://github.com/pklepa/discord-clone">
-                  View Code
-                </Button>
-                <Button href="https://pklepa.github.io/discord-clone/" primary>
-                  See it Live
-                </Button>
-              </div>
-            </ProjectDescription>
-          </ProjectContainer>
-        </AnimatePresence>
+        <ProjectContainer
+          exit={{
+            opacity: 0,
+            y: -30,
+            transition: { duration: 0.5 },
+          }}
+          animate={{
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.5, delay: 0.3 },
+          }}
+          initial={{
+            opacity: 0,
+            y: -30,
+            transition: { duration: 0.5 },
+          }}
+        >
+          <ProjectImage
+            src="https://user-images.githubusercontent.com/22618438/101240380-e8244080-36e6-11eb-87b9-3ca04851c74e.png"
+            alt="Planetarium"
+          />
+          <ProjectDescription>
+            <h1>Planetarium</h1>
+            <IconsWrapper>
+              <Tag>
+                <ReactIcon />
+                <span>react</span>
+              </Tag>
+              <Tag>
+                <StyledComponentsIcon />
+                <span>styled-components</span>
+              </Tag>
+              <Tag>
+                <FramerIcon />
+                <span>framer-motion</span>
+              </Tag>
+            </IconsWrapper>
+            <p>
+              Clean design for an e-commerce application with shopping cart
+              capabilities. Main focus was practicing and deploying a React
+              Router application.
+            </p>
 
-        <ControlArrow>
-          <ArrowRightIcon />
-        </ControlArrow>
+            <div className="buttons-wrapper">
+              <Button href="https://github.com/pklepa/shopping-cart">
+                View Code
+              </Button>
+              <Button href="https://pklepa.github.io/shopping-cart/" primary>
+                See it Live
+              </Button>
+            </div>
+          </ProjectDescription>
+        </ProjectContainer>
       </motion.div>
 
       <motion.div

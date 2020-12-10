@@ -20,6 +20,18 @@ const GlobalStyle = createGlobalStyle`
     font-size: 18px;  
   }
 
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #666;
+  }
+  ::-webkit-scrollbar {
+    width: 6px;
+    background-color: #666;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #000000;
+  }
+
   * {
     box-sizing: border-box;
   }
