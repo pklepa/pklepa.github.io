@@ -80,7 +80,7 @@ export const IconsContainer = styled.div`
 export const ProjectContainer = styled.div`
   display: flex;
   align-items: center;
-  /* max-width: 600px; */
+  padding: 0 40px;
 `;
 
 export const ProjectImage = styled.img`
@@ -135,4 +135,24 @@ export const Button = styled.a`
   padding: 6px 10px;
 
   cursor: pointer;
+`;
+
+export const ControlArrow = styled.button`
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  svg {
+    width: 40px;
+    color: ${(props) => props.theme.secondary};
+    /* opacity: 0.7; */
+
+    transition: 0.4s;
+
+    &:hover {
+      /* opacity: 1; */
+      color: ${(props) => props.theme.highlight};
+    }
+  }
 `;

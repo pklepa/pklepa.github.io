@@ -1,8 +1,9 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 import {
   Container,
+  ControlArrow,
   IconsContainer,
   ProjectContainer,
   ProjectImage,
@@ -20,6 +21,8 @@ import {
   FirebaseIcon,
   FramerIcon,
   StyledComponentsIcon,
+  ArrowLeftIcon,
+  ArrowRightIcon,
 } from "../../components/Icons";
 
 import { Tag } from "../../components/Tag";
@@ -37,47 +40,57 @@ function Projects() {
         initial="out"
         variants={pageTransition}
       >
-        <ProjectContainer>
-          <ProjectImage
-            src="https://user-images.githubusercontent.com/22618438/101240785-5ec23d80-36e9-11eb-9dab-9f2a3910fbe6.png"
-            alt="Discord Clone"
-          />
-          <ProjectDescription>
-            <h1>Discount Discord</h1>
-            <IconsWrapper>
-              <Tag>
-                <ReactIcon />
-                <span>react</span>
-              </Tag>
-              <Tag>
-                <FirebaseIcon />
-                <span>firebase</span>
-              </Tag>
-              <Tag>
-                <StyledComponentsIcon />
-                <span>styled-components</span>
-              </Tag>
-              <Tag>
-                <FramerIcon />
-                <span>framer-motion</span>
-              </Tag>
-            </IconsWrapper>
-            <p>
-              A clone of Discord's user interface and some of its features such
-              as real-time chat, user authentication (Google account) and
-              distinct channel chat rooms.
-            </p>
+        <ControlArrow>
+          <ArrowLeftIcon />
+        </ControlArrow>
 
-            <div className="buttons-wrapper">
-              <Button href="https://github.com/pklepa/discord-clone">
-                View Code
-              </Button>
-              <Button href="https://pklepa.github.io/discord-clone/" primary>
-                See it Live
-              </Button>
-            </div>
-          </ProjectDescription>
-        </ProjectContainer>
+        <AnimatePresence>
+          <ProjectContainer>
+            <ProjectImage
+              src="https://user-images.githubusercontent.com/22618438/101240729-055a0e80-36e9-11eb-893d-3b807437b5e1.png"
+              alt="Discord Clone"
+            />
+            <ProjectDescription>
+              <h1>Discount Discord</h1>
+              <IconsWrapper>
+                <Tag>
+                  <ReactIcon />
+                  <span>react</span>
+                </Tag>
+                <Tag>
+                  <FirebaseIcon />
+                  <span>firebase</span>
+                </Tag>
+                <Tag>
+                  <StyledComponentsIcon />
+                  <span>styled-components</span>
+                </Tag>
+                <Tag>
+                  <FramerIcon />
+                  <span>framer-motion</span>
+                </Tag>
+              </IconsWrapper>
+              <p>
+                A clone of Discord's user interface and some of its features
+                such as real-time chat, user authentication (Google account) and
+                distinct channel chat rooms.
+              </p>
+
+              <div className="buttons-wrapper">
+                <Button href="https://github.com/pklepa/discord-clone">
+                  View Code
+                </Button>
+                <Button href="https://pklepa.github.io/discord-clone/" primary>
+                  See it Live
+                </Button>
+              </div>
+            </ProjectDescription>
+          </ProjectContainer>
+        </AnimatePresence>
+
+        <ControlArrow>
+          <ArrowRightIcon />
+        </ControlArrow>
       </motion.div>
 
       <motion.div

@@ -6,8 +6,10 @@ import {
   Instagram,
   ReactLogo,
 } from "styled-icons/boxicons-logos";
+
 import { Mail, LogoFirebase } from "styled-icons/ionicons-solid";
 import { Framer, StyledComponents } from "styled-icons/simple-icons";
+import { ArrowLeftSquare, ArrowRightSquare } from "styled-icons/bootstrap";
 
 export const GithubIcon = styled(Github)``;
 export const LinkedinIcon = styled(LinkedinSquare)``;
@@ -17,3 +19,5 @@ export const ReactIcon = styled(ReactLogo)``;
 export const FirebaseIcon = styled(LogoFirebase)``;
 export const FramerIcon = styled(Framer)``;
 export const StyledComponentsIcon = styled(StyledComponents)``;
+export const ArrowLeftIcon = styled(ArrowLeftSquare)``;
+export const ArrowRightIcon = styled(ArrowRightSquare)``;
