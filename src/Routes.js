@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Switch, Route, Link, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
@@ -10,15 +10,27 @@ import Contact from "./views/Contact";
 
 function Routes() {
   const location = useLocation();
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 800);
+
+  const updateMedia = () => {
+    setDesktop(window.innerWidth > 1450);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", updateMedia);
+    return () => window.removeEventListener("resize", updateMedia);
+  });
 
   return (
     <>
       <Navbar>
-        <Logo>
-          <h1>pk</h1>
+        <Logo to="/">
+          <div>
+            <h1>pk</h1>
+          </div>
         </Logo>
         <ul>
-          <Link to="/">Home</Link>
+          {isDesktop && <Link to="/">Home</Link>}
           <Link to="/about">About</Link>
           <Link to="/projects">Projects</Link>
           <Link to="/contact">Contact</Link>
