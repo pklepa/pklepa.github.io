@@ -86,7 +86,6 @@ export const ProjectContainer = styled(motion.div)`
 
 export const ProjectImage = styled.img`
   max-height: 280px;
-  /* min-width: 350px; */
   border-radius: 5px;
   margin-right: 16px;
 `;
@@ -136,24 +135,9 @@ export const Button = styled.a`
   padding: 6px 10px;
 
   cursor: pointer;
-`;
+  transition: 0.4s;
 
-export const ControlArrow = styled.button`
-  background: none;
-  outline: none;
-  border: none;
-  cursor: pointer;
-
-  svg {
-    width: 40px;
-    color: ${(props) => props.theme.secondary};
-    /* opacity: 0.7; */
-
-    transition: 0.4s;
-
-    &:hover {
-      /* opacity: 1; */
-      color: ${(props) => props.theme.highlight};
-    }
+  &:hover {
+    filter: brightness(1.1);
   }
 `;
