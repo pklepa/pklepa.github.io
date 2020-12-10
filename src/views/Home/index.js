@@ -41,7 +41,6 @@ function Home() {
         <Link to="about">About</Link>
         <Link to="projects">Projects</Link>
         <Link to="contact">Contact</Link>
-        <Link to="temp">Temp</Link>
       </motion.div>
     </Container>
   );

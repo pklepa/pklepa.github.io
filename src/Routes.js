@@ -4,10 +4,11 @@ import { AnimatePresence } from "framer-motion";
 
 import { Navbar, Logo } from "./components/Navbar";
 
-import Home from "./views/Home";
-import Temp from "./views/Temp";
-import Contact from "./views/Contact";
 import About from "./views/About";
+import Contact from "./views/Contact";
+import Home from "./views/Home";
+import Projects from "./views/Projects";
+import Temp from "./views/Temp";
 
 function Routes() {
   const location = useLocation();
@@ -46,6 +47,10 @@ function Routes() {
 
           <Route path="/temp">
             <Temp />
+          </Route>
+
+          <Route path="/projects">
+            <Projects />
           </Route>
 
           <Route path="/contact">
