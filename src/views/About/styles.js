@@ -42,32 +42,17 @@ export const Container = styled(motion.div)`
       }
     }
 
-    img {
-      width: 200px;
-      margin-left: 50px;
-      border-radius: 50%;
-    }
-
     @media (max-width: 768px) {
       flex-direction: column;
 
       .bio {
         order: 2;
       }
-
-      img {
-        margin-left: 0;
-        margin-bottom: 40px;
-      }
     }
 
     @media (max-width: 550px) {
       .bio {
         max-width: 300px;
-      }
-
-      img {
-        width: 150px;
       }
     }
   }
@@ -112,6 +97,21 @@ export const Container = styled(motion.div)`
   span {
     opacity: 0.5;
     margin: 20px 0;
+  }
+`;
+
+export const ProfilePic = styled.img`
+  width: 200px;
+  margin-left: 50px;
+  border-radius: 50%;
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 550px) {
+    width: 150px;
   }
 `;
 

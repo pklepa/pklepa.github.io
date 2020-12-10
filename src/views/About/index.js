@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import { Container, IconsContainer } from "./styles";
+import { Container, ProfilePic, IconsContainer } from "./styles";
 import {
   GithubIcon,
   LinkedinIcon,
@@ -35,7 +35,7 @@ function About() {
           </p>
         </div>
 
-        <img src={Img} alt="Profile" />
+        <ProfilePic src={Img} alt="Profile" />
       </motion.div>
 
       <motion.div

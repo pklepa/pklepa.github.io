@@ -24,56 +24,11 @@ export const Container = styled(motion.div)`
     flex: 1;
     display: flex;
     padding: 10px 0 30px;
-
-    .bio {
-      max-width: 500px;
-
-      h1 {
-        font-size: 24px;
-        font-family: "Big Shoulders Stencil Display", monospace;
-        color: ${(props) => props.theme.highlight};
-        text-align: center;
-
-        margin-bottom: 12px;
-      }
-
-      p {
-        text-align: left;
-      }
-    }
-
-    img {
-      width: 200px;
-      margin-left: 50px;
-      border-radius: 50%;
-    }
-
-    @media (max-width: 768px) {
-      flex-direction: column;
-
-      .bio {
-        order: 2;
-      }
-
-      img {
-        margin-left: 0;
-        margin-bottom: 40px;
-      }
-    }
-
-    @media (max-width: 550px) {
-      .bio {
-        max-width: 300px;
-      }
-
-      img {
-        width: 150px;
-      }
-    }
   }
 
   .bottom {
     position: relative;
+    min-height: 65px;
     border-top: 2px solid #333;
 
     &::after {
@@ -95,23 +50,6 @@ export const Container = styled(motion.div)`
   p {
     text-align: center;
     line-height: 1.5em;
-  }
-
-  .e-mail {
-    color: ${(props) => props.theme.highlight};
-    font-size: 18px;
-    font-family: monospace;
-    text-decoration: none;
-    background-color: ${(props) => props.theme.primary};
-    border-radius: 3px;
-    border: 1px solid ${(props) => props.theme.highlight};
-    padding: 8px 12px;
-    margin: 12px;
-  }
-
-  span {
-    opacity: 0.5;
-    margin: 20px 0;
   }
 `;
 
@@ -137,4 +75,64 @@ export const IconsContainer = styled.div`
       color: ${(props) => props.theme.highlight};
     }
   }
+`;
+
+export const ProjectContainer = styled.div`
+  display: flex;
+  align-items: center;
+  /* max-width: 600px; */
+`;
+
+export const ProjectImage = styled.img`
+  max-height: 280px;
+  /* min-width: 350px; */
+  border-radius: 5px;
+  margin-right: 16px;
+`;
+
+export const ProjectDescription = styled.div`
+  display: flex;
+  align-self: flex-start;
+  max-width: 400px;
+  flex-direction: column;
+
+  h1 {
+    color: ${(props) => props.theme.highlight};
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    text-align: left;
+  }
+
+  .buttons-wrapper {
+    display: flex;
+    align-self: center;
+    margin-top: 20px;
+
+    & > a:not(:first-child) {
+      margin-left: 12px;
+    }
+  }
+`;
+
+export const IconsWrapper = styled.div`
+  display: flex;
+  margin-bottom: 16px;
+`;
+
+export const Button = styled.a`
+  border: 2px solid ${(props) => props.theme.highlight};
+  border-radius: 3px;
+
+  background-color: ${(props) => (props.primary ? "#f8efd4" : "#222")};
+  color: ${(props) => (props.primary ? "#222" : "#f8efd4")};
+
+  font-size: 16px;
+  font-weight: ${(props) => (props.primary ? "bold" : "normal")};
+  text-decoration: none;
+  padding: 6px 10px;
+
+  cursor: pointer;
 `;

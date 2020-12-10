@@ -1,14 +1,28 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import { Container, IconsContainer } from "./styles";
+import {
+  Container,
+  IconsContainer,
+  ProjectContainer,
+  ProjectImage,
+  ProjectDescription,
+  IconsWrapper,
+  Button,
+} from "./styles";
+
 import {
   GithubIcon,
   LinkedinIcon,
   MailIcon,
   InstagramIcon,
+  ReactIcon,
+  FirebaseIcon,
+  FramerIcon,
+  StyledComponentsIcon,
 } from "../../components/Icons";
 
+import { Tag } from "../../components/Tag";
 import { pageTransition } from "../../utils/Animations";
 
 function Projects() {
@@ -22,7 +36,49 @@ function Projects() {
         animate="in"
         initial="out"
         variants={pageTransition}
-      ></motion.div>
+      >
+        <ProjectContainer>
+          <ProjectImage
+            src="https://user-images.githubusercontent.com/22618438/101240785-5ec23d80-36e9-11eb-9dab-9f2a3910fbe6.png"
+            alt="Discord Clone"
+          />
+          <ProjectDescription>
+            <h1>Discount Discord</h1>
+            <IconsWrapper>
+              <Tag>
+                <ReactIcon />
+                <span>react</span>
+              </Tag>
+              <Tag>
+                <FirebaseIcon />
+                <span>firebase</span>
+              </Tag>
+              <Tag>
+                <StyledComponentsIcon />
+                <span>styled-components</span>
+              </Tag>
+              <Tag>
+                <FramerIcon />
+                <span>framer-motion</span>
+              </Tag>
+            </IconsWrapper>
+            <p>
+              A clone of Discord's user interface and some of its features such
+              as real-time chat, user authentication (Google account) and
+              distinct channel chat rooms.
+            </p>
+
+            <div className="buttons-wrapper">
+              <Button href="https://github.com/pklepa/discord-clone">
+                View Code
+              </Button>
+              <Button href="https://pklepa.github.io/discord-clone/" primary>
+                See it Live
+              </Button>
+            </div>
+          </ProjectDescription>
+        </ProjectContainer>
+      </motion.div>
 
       <motion.div
         className="bottom"
