@@ -10,7 +10,13 @@ import { motion } from "framer-motion";
 function Home() {
   return (
     <Container>
-      <div className="top"></div>
+      <motion.div
+        className="top"
+        initial={{ y: -80 }}
+        animate={{ y: 0 }}
+        exit={{ y: -80 }}
+        transition={{ duration: 1, delay: -0.5 }}
+      ></motion.div>
 
       <motion.div
         className="middle"

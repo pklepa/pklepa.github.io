@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import { Container, Navbar, Logo, IconsContainer } from "./styles";
 import {
@@ -13,29 +14,23 @@ import { pageTransition } from "../../utils/Animations";
 
 function Contact() {
   return (
-    <Container exit="out" animate="in" initial="out" variants={pageTransition}>
-      <div className="top">
-        <Navbar>
-          <Logo>
-            <h1>pk</h1>
-          </Logo>
-          <ul>
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/projects">Projects</Link>
-            <Link to="/contact">Contact</Link>
-          </ul>
-        </Navbar>
-      </div>
+    <Container>
+      <div className="top"></div>
 
-      <div className="middle">
+      <motion.div
+        className="middle"
+        exit="out"
+        animate="in"
+        initial="out"
+        variants={pageTransition}
+      >
         <p>
           Hey, I just met you and this is crazy! <br />
           Here's my e-mail:
         </p>
 
         <a
-          class="e-mail"
+          className="e-mail"
           // target="_blank"
           // rel="noreferrer"
           href="mailto:pedro.klepa+dev@gmail.com?subject=Hello%20from%20your%20website"
@@ -44,9 +39,15 @@ function Contact() {
         </a>
 
         <p>Write me maybe.</p>
-      </div>
+      </motion.div>
 
-      <div className="bottom">
+      <motion.div
+        className="bottom"
+        initial={{ y: 100 }}
+        animate={{ y: 0 }}
+        exit={{ y: 100 }}
+        transition={{ duration: 1, delay: 0.3 }}
+      >
         <IconsContainer>
           <a target="_blank" rel="noreferrer" href="https://github.com/pklepa">
             <GithubIcon />
@@ -73,7 +74,7 @@ function Contact() {
             <MailIcon />
           </a>
         </IconsContainer>
-      </div>
+      </motion.div>
     </Container>
   );
 }

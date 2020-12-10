@@ -1,45 +1,16 @@
 import styled, { keyframes } from "styled-components";
-import { motion } from "framer-motion";
 
-export const Container = styled(motion.div)`
-  flex: 1;
+export const Navbar = styled.nav`
+  position: absolute;
 
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+
   width: 100%;
-  max-height: 100vh;
-  overflow-y: hidden;
+  padding: 10px 40px;
 
-  z-index: 30;
-
-  & > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: 80px;
-  }
-
-  .top {
-    background-color: ${(props) => props.theme.primary};
-  }
-
-  .middle {
-    flex: 1;
-    flex-direction: column;
-
-    h2 {
-      margin-top: 16px;
-
-      a {
-        color: ${(props) => props.theme.highlight};
-      }
-    }
-  }
-
-  .bottom {
+  ul {
     a {
       color: ${(props) => props.theme.secondary};
       font-size: 20px;
@@ -67,7 +38,7 @@ export const Logo = styled.div`
   position: relative;
 
   font-family: "Big Shoulders Stencil Display", cursive;
-  font-size: 50px;
+  font-size: 24px;
   border-radius: 3px;
   z-index: 10;
 
@@ -78,7 +49,7 @@ export const Logo = styled.div`
     color: #f8efd5;
     background-color: ${(props) => props.theme.primary};
     border-radius: 3px;
-    padding: 10px 10px 14px;
+    padding: 4px 8px 8px;
   }
 
   &:hover {
@@ -89,15 +60,15 @@ export const Logo = styled.div`
   &::after {
     position: absolute;
     content: "";
-    top: calc(-1 * 3px);
-    left: calc(-1 * 3px);
+    top: calc(-1 * 2px);
+    left: calc(-1 * 2px);
     z-index: -1;
-    width: calc(100% + 3px * 2);
-    height: calc(100% + 3px * 2);
+    width: calc(100% + 2px * 2);
+    height: calc(100% + 2px * 2);
     background: linear-gradient(90deg, #222, #f8efd4, #222);
     background-size: 200% 200%;
     background-position: 0 -50%;
-    border-radius: calc(2 * 3px);
+    border-radius: calc(2 * 2px);
     animation: ${moveGradient} 8s ease-in-out infinite;
   }
 `;
