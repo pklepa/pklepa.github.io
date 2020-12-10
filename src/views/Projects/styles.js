@@ -86,6 +86,7 @@ export const ProjectContainer = styled(motion.div)`
 
 export const ProjectImage = styled.img`
   max-height: 280px;
+  max-width: 500px;
   border-radius: 5px;
   margin-right: 16px;
 `;

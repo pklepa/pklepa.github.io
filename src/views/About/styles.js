@@ -60,6 +60,7 @@ export const Container = styled(motion.div)`
   .bottom {
     position: relative;
     border-top: 2px solid #333;
+    min-height: 65px;
 
     &::after {
       position: absolute;

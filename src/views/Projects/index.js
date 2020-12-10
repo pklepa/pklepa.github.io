@@ -17,9 +17,13 @@ import {
   MailIcon,
   InstagramIcon,
   ReactIcon,
+  JestIcon,
+  JavascriptIcon,
   FirebaseIcon,
   FramerIcon,
+  MaterializeIcon,
   StyledComponentsIcon,
+  WebpackIcon,
 } from "../../components/Icons";
 
 import { Tag } from "../../components/Tag";
@@ -28,7 +32,7 @@ import { pageTransition, delayedPageTransition } from "../../utils/Animations";
 import { projects_data } from "../../assets/projects_data/projects_data";
 
 function Projects() {
-  let isFirst = true;
+  let isFirst = 1;
 
   return (
     <Container>
@@ -41,7 +45,9 @@ function Projects() {
               exit="out"
               animate="in"
               initial="out"
-              variants={isFirst ? pageTransition : delayedPageTransition}
+              variants={
+                isFirst++ === 1 ? pageTransition : delayedPageTransition
+              }
             >
               {(isFirst = !isFirst)}
               <ProjectImage src={project.photoUrl} alt="Project preview" />
@@ -62,6 +68,13 @@ function Projects() {
                     </Tag>
                   )}
 
+                  {project.tools.jest && (
+                    <Tag>
+                      <JestIcon />
+                      <span>jest</span>
+                    </Tag>
+                  )}
+
                   {project.tools.styledComponents && (
                     <Tag>
                       <StyledComponentsIcon />
@@ -75,12 +88,44 @@ function Projects() {
                       <span>framer-motion</span>
                     </Tag>
                   )}
+
+                  {project.tools.webpack && (
+                    <Tag>
+                      <WebpackIcon />
+                      <span>webpack</span>
+                    </Tag>
+                  )}
+
+                  {project.tools.materialize && (
+                    <Tag>
+                      <MaterializeIcon />
+                      <span>materialize-css</span>
+                    </Tag>
+                  )}
+
+                  {project.tools.javascript && (
+                    <Tag>
+                      <JavascriptIcon />
+                      <span>vanilla-js</span>
+                    </Tag>
+                  )}
                 </IconsWrapper>
                 <p>{project.description}</p>
 
                 <div className="buttons-wrapper">
-                  <Button href={project.githubUrl}>View Code</Button>
-                  <Button href={project.liveDemoUrl} primary>
+                  <Button
+                    target="_blank"
+                    rel="noreferrer"
+                    href={project.githubUrl}
+                  >
+                    View Code
+                  </Button>
+                  <Button
+                    target="_blank"
+                    rel="noreferrer"
+                    href={project.liveDemoUrl}
+                    primary
+                  >
                     See it Live
                   </Button>
                 </div>
