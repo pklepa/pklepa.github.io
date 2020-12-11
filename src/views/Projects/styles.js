@@ -82,6 +82,12 @@ export const ProjectContainer = styled(motion.div)`
   display: flex;
   align-items: center;
   padding: 40px 40px;
+  box-sizing: border-box;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    max-width: 600px;
+  }
 `;
 
 export const ProjectImage = styled.img`
@@ -89,6 +95,14 @@ export const ProjectImage = styled.img`
   max-width: 500px;
   border-radius: 5px;
   margin-right: 16px;
+
+  @media (max-width: 1000px) {
+    margin: 0 0 16px;
+  }
+
+  @media (max-width: 600px) {
+    max-width: 330px;
+  }
 `;
 
 export const ProjectDescription = styled.div`
@@ -114,6 +128,10 @@ export const ProjectDescription = styled.div`
     & > a:not(:first-child) {
       margin-left: 12px;
     }
+  }
+
+  @media (max-width: 1000px) {
+    max-width: 500px;
   }
 `;
 
