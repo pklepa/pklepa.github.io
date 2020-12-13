@@ -27,7 +27,7 @@ function About() {
         <div className="bio">
           <h1>Who's this guy?</h1>
           <p>
-            I'm a Brazilian / Italian aspiring front-end developer based in
+            I'm a Brazilian / Italian aspiring fullstack developer based in
             Liverpool, UK. Bachelor of Science in Electrical Engineering, I have
             for long enjoyed coding and design. After working the last two years
             in the television industry as a project architect, I decided to

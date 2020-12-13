@@ -28,7 +28,7 @@ function Home() {
         <Logo>
           <h1>pedro klepa</h1>
         </Logo>
-        <h2>Front-end JavaScript Developer</h2>
+        <h2>Fullstack JavaScript Developer</h2>
       </motion.div>
 
       <motion.div
