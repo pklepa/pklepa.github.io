@@ -25,6 +25,8 @@ export const Container = styled(motion.div)`
     display: flex;
     flex-direction: column;
     padding: 30px 0 50px;
+
+    position: relative;
   }
 
   .bottom {
@@ -164,4 +166,24 @@ export const Button = styled.a`
   &:hover {
     filter: brightness(1.1);
   }
+`;
+
+export const FloatingButton = styled(motion.button)`
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  z-index: 999;
+  opacity: ${(props) => (props.hide ? 0 : 1)};
+  transition: 0.2s;
+
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  outline: none;
+
+  cursor: pointer;
+
+  background-color: ${(props) => props.theme.primary};
+  border: 3px solid ${(props) => props.theme.highlight};
+  color: ${(props) => props.theme.highlight};
 `;

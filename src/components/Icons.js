@@ -8,6 +8,8 @@ import {
   Javascript,
 } from "styled-icons/boxicons-logos";
 
+import { ChevronUp } from "styled-icons/boxicons-regular";
+
 import { Mail, LogoFirebase } from "styled-icons/ionicons-solid";
 import {
   Framer,
@@ -30,6 +32,7 @@ export const StyledComponentsIcon = styled(StyledComponents)``;
 export const WebpackIcon = styled(Webpack)``;
 export const ArrowLeftIcon = styled(ArrowLeftSquare)``;
 export const ArrowRightIcon = styled(ArrowRightSquare)``;
+export const ArrowUpIcon = styled(ChevronUp)``;
 
 export const MaterializeIcon = () => {
   return (
