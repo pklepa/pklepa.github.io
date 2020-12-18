@@ -105,6 +105,7 @@ export const ProfilePic = styled.img`
   width: 200px;
   margin-left: 50px;
   border-radius: 50%;
+  background-color: #999;
 
   @media (max-width: 768px) {
     margin-left: 0;

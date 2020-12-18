@@ -83,6 +83,7 @@ export const ProjectContainer = styled(motion.div)`
   align-items: center;
   padding: 40px 40px;
   box-sizing: border-box;
+  border-radius: 10px;
 
   @media (max-width: 1000px) {
     flex-direction: column;
@@ -128,6 +129,10 @@ export const ProjectDescription = styled.div`
     & > a:not(:first-child) {
       margin-left: 12px;
     }
+  }
+
+  @media (min-width: 1001px) {
+    width: 400px;
   }
 
   @media (max-width: 1000px) {

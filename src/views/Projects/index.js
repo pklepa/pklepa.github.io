@@ -29,7 +29,7 @@ import {
 import { Tag } from "../../components/Tag";
 import { pageTransition, delayedPageTransition } from "../../utils/Animations";
 
-import { projects_data } from "../../assets/projects_data/projects_data";
+import { projects_data } from "../../assets/data/projects_data";
 
 function Projects() {
   let isFirst = 1;

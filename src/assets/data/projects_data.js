@@ -108,4 +108,29 @@ export const projects_data = [
     githubUrl: "https://github.com/pklepa/calculator",
     liveDemoUrl: "https://pklepa.github.io/calculator/",
   },
+
+  {
+    photoUrl:
+      "https://user-images.githubusercontent.com/22618438/102665235-5dc6ec80-417c-11eb-81dc-3081f4656bdc.png",
+    title: "Pomodoro Timer",
+    tools: {
+      javascript: true,
+    },
+    description:
+      "Basic Pomodoro Technique clock in the browser. Made as a pair programming exercise.",
+    githubUrl: "https://github.com/pklepa/pomodoro",
+    liveDemoUrl: "https://pklepa.github.io/pomodoro",
+  },
+
+  {
+    photoUrl:
+      "https://user-images.githubusercontent.com/22618438/102663861-8ac5d000-4179-11eb-9fe6-edcc77d2c3e3.png",
+    title: "NY Times Article Clone",
+    tools: {
+      sass: true,
+    },
+    description: "Clone of an article page from The New York Times.",
+    githubUrl: "https://github.com/pklepa/nyt-article-clone",
+    liveDemoUrl: "https://pklepa.github.io/nyt-article-clone/",
+  },
 ];
