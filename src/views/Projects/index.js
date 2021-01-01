@@ -13,19 +13,23 @@ import {
 } from "./styles";
 
 import {
-  GithubIcon,
-  LinkedinIcon,
-  MailIcon,
-  InstagramIcon,
-  ReactIcon,
-  JestIcon,
-  JavascriptIcon,
+  ArrowUpIcon,
   FirebaseIcon,
   FramerIcon,
+  GithubIcon,
+  InstagramIcon,
+  JavascriptIcon,
+  JestIcon,
+  LinkedinIcon,
+  MailIcon,
   MaterializeIcon,
+  MongodbIcon,
+  NodeIcon,
+  NpmIcon,
+  ReactIcon,
+  SassIcon,
   StyledComponentsIcon,
   WebpackIcon,
-  ArrowUpIcon,
 } from "../../components/Icons";
 
 import { Tag } from "../../components/Tag";
@@ -75,6 +79,27 @@ function Projects() {
               <ProjectDescription>
                 <h1>{project.title}</h1>
                 <IconsWrapper>
+                  {project.tools.node && (
+                    <Tag>
+                      <NodeIcon />
+                      <span>node-js</span>
+                    </Tag>
+                  )}
+
+                  {project.tools.express && (
+                    <Tag>
+                      <NpmIcon />
+                      <span>express</span>
+                    </Tag>
+                  )}
+
+                  {project.tools.mongodb && (
+                    <Tag>
+                      <MongodbIcon />
+                      <span>mongodb</span>
+                    </Tag>
+                  )}
+
                   {project.tools.react && (
                     <Tag>
                       <ReactIcon />
@@ -128,6 +153,13 @@ function Projects() {
                     <Tag>
                       <JavascriptIcon />
                       <span>vanilla-js</span>
+                    </Tag>
+                  )}
+
+                  {project.tools.sass && (
+                    <Tag>
+                      <SassIcon />
+                      <span>sass</span>
                     </Tag>
                   )}
                 </IconsWrapper>

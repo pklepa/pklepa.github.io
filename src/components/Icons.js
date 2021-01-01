@@ -6,22 +6,32 @@ import {
   Instagram,
   ReactLogo,
   Javascript,
+  Nodejs,
 } from "styled-icons/boxicons-logos";
 
 import { ChevronUp } from "styled-icons/boxicons-regular";
 
-import { Mail, LogoFirebase } from "styled-icons/ionicons-solid";
+import {
+  Mail,
+  LogoFirebase,
+  LogoNpm,
+  LogoSass,
+} from "styled-icons/ionicons-solid";
 import {
   Framer,
   StyledComponents,
   Jest,
   Webpack,
+  Mongodb,
 } from "styled-icons/simple-icons";
 import { ArrowLeftSquare, ArrowRightSquare } from "styled-icons/bootstrap";
 
 export const GithubIcon = styled(Github)``;
 export const LinkedinIcon = styled(LinkedinSquare)``;
 export const MailIcon = styled(Mail)``;
+export const MongodbIcon = styled(Mongodb)``;
+export const NodeIcon = styled(Nodejs)``;
+export const NpmIcon = styled(LogoNpm)``;
 export const InstagramIcon = styled(Instagram)``;
 export const ReactIcon = styled(ReactLogo)``;
 export const FirebaseIcon = styled(LogoFirebase)``;
@@ -29,6 +39,7 @@ export const JestIcon = styled(Jest)``;
 export const JavascriptIcon = styled(Javascript)``;
 export const FramerIcon = styled(Framer)``;
 export const StyledComponentsIcon = styled(StyledComponents)``;
+export const SassIcon = styled(LogoSass)``;
 export const WebpackIcon = styled(Webpack)``;
 export const ArrowLeftIcon = styled(ArrowLeftSquare)``;
 export const ArrowRightIcon = styled(ArrowRightSquare)``;
