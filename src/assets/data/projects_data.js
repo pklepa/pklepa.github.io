@@ -1,7 +1,7 @@
 export const projects_data = [
   {
     photoUrl:
-      "https://user-images.githubusercontent.com/22618438/101240729-055a0e80-36e9-11eb-893d-3b807437b5e1.png",
+      "https://user-images.githubusercontent.com/22618438/103463379-d48aea80-4d23-11eb-8b48-96064477351a.png",
     title: "Gameshop",
     tools: {
       node: true,
@@ -10,13 +10,13 @@ export const projects_data = [
       sass: true,
     },
     description:
-      "Game inventory application designed as an MVC architecture to serve the browser from a Node / Express backend. The app has a cloud MongoDB database and implements all CRUD methods.",
+      "Game inventory application designed as an MVC architecture to serve the browser from a Node / Express backend. The app uses a cloud MongoDB database and implements all CRUD methods.",
     githubUrl: "https://github.com/pklepa/inventory-app",
     liveDemoUrl: "https://nameless-woodland-81012.herokuapp.com/",
   },
   {
     photoUrl:
-      "https://user-images.githubusercontent.com/22618438/101240729-055a0e80-36e9-11eb-893d-3b807437b5e1.png",
+      "https://user-images.githubusercontent.com/22618438/101240748-20c51980-36e9-11eb-9190-4288896bb716.png",
     title: "Discount Discord",
     tools: {
       react: true,
