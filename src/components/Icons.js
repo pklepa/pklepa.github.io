@@ -7,6 +7,7 @@ import {
   ReactLogo,
   Javascript,
   Nodejs,
+  FacebookSquare,
 } from "styled-icons/boxicons-logos";
 
 import { ChevronUp } from "styled-icons/boxicons-regular";
@@ -34,6 +35,7 @@ export const NodeIcon = styled(Nodejs)``;
 export const NpmIcon = styled(LogoNpm)``;
 export const InstagramIcon = styled(Instagram)``;
 export const ReactIcon = styled(ReactLogo)``;
+export const FacebookIcon = styled(FacebookSquare)``;
 export const FirebaseIcon = styled(LogoFirebase)``;
 export const JestIcon = styled(Jest)``;
 export const JavascriptIcon = styled(Javascript)``;

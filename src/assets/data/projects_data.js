@@ -1,6 +1,23 @@
 export const projects_data = [
   {
     photoUrl:
+      "https://user-images.githubusercontent.com/22618438/104212638-574f2c00-542d-11eb-8edb-58bb4c0bb772.png",
+    title: "Pencil Blog",
+    tools: {
+      node: true,
+      express: true,
+      react: true,
+      sass: true,
+      contentful: true,
+      facebook: true,
+    },
+    description:
+      "Fully featured blog with CMS Integration (Contentful) and comments with Facebook API. Developed on React with an Node/Express server on the backend.",
+    githubUrl: "https://github.com/pklepa/pencil-blog",
+    liveDemoUrl: "https://blog-pencil.herokuapp.com/",
+  },
+  {
+    photoUrl:
       "https://user-images.githubusercontent.com/22618438/103463379-d48aea80-4d23-11eb-8b48-96064477351a.png",
     title: "Gameshop",
     tools: {

@@ -14,6 +14,7 @@ import {
 
 import {
   ArrowUpIcon,
+  FacebookIcon,
   FirebaseIcon,
   FramerIcon,
   GithubIcon,
@@ -160,6 +161,13 @@ function Projects() {
                     <Tag>
                       <SassIcon />
                       <span>sass</span>
+                    </Tag>
+                  )}
+
+                  {project.tools.facebook && (
+                    <Tag>
+                      <FacebookIcon />
+                      <span>facebook-api</span>
                     </Tag>
                   )}
                 </IconsWrapper>
