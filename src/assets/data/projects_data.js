@@ -16,6 +16,20 @@ export const projects_data = [
     githubUrl: "https://github.com/pklepa/pencil-blog",
     liveDemoUrl: "https://blog-pencil.herokuapp.com/",
   },
+
+  {
+    photoUrl:
+      "https://user-images.githubusercontent.com/22618438/105358697-6b91e680-5bee-11eb-914d-e89d3e681700.png",
+    title: "Traffico",
+    tools: {
+      react: true,
+      styledComponents: true,
+    },
+    description:
+      "Originally designed on Figma, this is a Landing page for a fictonal traffic permit consultant filled with SVG animations.",
+    githubUrl: "https://github.com/pklepa/traffico-landing",
+    liveDemoUrl: "https://pklepa.github.io/traffico-landing/",
+  },
   {
     photoUrl:
       "https://user-images.githubusercontent.com/22618438/103463379-d48aea80-4d23-11eb-8b48-96064477351a.png",
