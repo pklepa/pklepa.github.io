@@ -1,6 +1,19 @@
 export const projects_data = [
   {
     photoUrl:
+      "https://user-images.githubusercontent.com/22618438/105358697-6b91e680-5bee-11eb-914d-e89d3e681700.png",
+    title: "Traffico",
+    tools: {
+      react: true,
+      styledComponents: true,
+    },
+    description:
+      "Originally designed on Figma, this is a Landing page for a fictonal traffic permit consultant filled with SVG animations.",
+    githubUrl: "https://github.com/pklepa/traffico-landing",
+    liveDemoUrl: "https://pklepa.github.io/traffico-landing/",
+  },
+  {
+    photoUrl:
       "https://user-images.githubusercontent.com/22618438/104212638-574f2c00-542d-11eb-8edb-58bb4c0bb772.png",
     title: "Pencil Blog",
     tools: {
@@ -15,35 +28,6 @@ export const projects_data = [
       "Fully featured blog with CMS Integration (Contentful) and comments with Facebook API. Developed on React with an Node/Express server on the backend.",
     githubUrl: "https://github.com/pklepa/pencil-blog",
     liveDemoUrl: "https://blog-pencil.herokuapp.com/",
-  },
-
-  {
-    photoUrl:
-      "https://user-images.githubusercontent.com/22618438/105358697-6b91e680-5bee-11eb-914d-e89d3e681700.png",
-    title: "Traffico",
-    tools: {
-      react: true,
-      styledComponents: true,
-    },
-    description:
-      "Originally designed on Figma, this is a Landing page for a fictonal traffic permit consultant filled with SVG animations.",
-    githubUrl: "https://github.com/pklepa/traffico-landing",
-    liveDemoUrl: "https://pklepa.github.io/traffico-landing/",
-  },
-  {
-    photoUrl:
-      "https://user-images.githubusercontent.com/22618438/103463379-d48aea80-4d23-11eb-8b48-96064477351a.png",
-    title: "Gameshop",
-    tools: {
-      node: true,
-      express: true,
-      mongodb: true,
-      sass: true,
-    },
-    description:
-      "Game inventory application designed as an MVC architecture to serve the browser from a Node / Express backend. The app uses a cloud MongoDB database and implements all CRUD methods.",
-    githubUrl: "https://github.com/pklepa/inventory-app",
-    liveDemoUrl: "https://nameless-woodland-81012.herokuapp.com/",
   },
   {
     photoUrl:
@@ -73,6 +57,21 @@ export const projects_data = [
       "Clean design for an e-commerce application with shopping cart capabilities. Main focus was practicing and deploying a React Router application.",
     githubUrl: "https://github.com/pklepa/shopping-cart",
     liveDemoUrl: "https://pklepa.github.io/shopping-cart/",
+  },
+  {
+    photoUrl:
+      "https://user-images.githubusercontent.com/22618438/103463379-d48aea80-4d23-11eb-8b48-96064477351a.png",
+    title: "Gameshop",
+    tools: {
+      node: true,
+      express: true,
+      mongodb: true,
+      sass: true,
+    },
+    description:
+      "Game inventory application designed as an MVC architecture to serve the browser from a Node / Express backend. The app uses a cloud MongoDB database and implements all CRUD methods.",
+    githubUrl: "https://github.com/pklepa/inventory-app",
+    liveDemoUrl: "https://nameless-woodland-81012.herokuapp.com/",
   },
   {
     photoUrl:
