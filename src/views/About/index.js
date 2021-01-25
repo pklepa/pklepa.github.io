@@ -27,17 +27,18 @@ function About() {
         <div className="bio">
           <h1>Who's this guy?</h1>
           <p>
-            Passionate about learning, I see myself as a communicative and
+            Deeply invested in the life-long learning mentality, I'm a
+            full-stack developer who carries a keen eye for design in an
+            user-first approach. My focus is in creating responsive layouts on
+            the JavaScript stack of React and NodeJS, and from my background as
+            an electrical engineer I'm well acquainted to bringing out solutions
+            to complex problems.
+            {/* Passionate about learning, I see myself as a communicative and
             upfront person who’s doesn’t refrain from asking questions. Our
             ability to share knowledge and experiences drives me and I’ll always
             be looking for a larger room to be around great people. I’m an
             electrical engineer seeking opportunities to shift into the software
-            and web development industry.
-            {/* I'm a Brazilian / Italian aspiring fullstack developer based in
-            Liverpool, UK. Bachelor of Science in Electrical Engineering, I have
-            for long enjoyed coding and design. After working the last two years
-            in the television industry as a project architect, I decided to
-            fully commit into web development going forwards in 2021. */}
+            and web development industry. */}
           </p>
         </div>
 
