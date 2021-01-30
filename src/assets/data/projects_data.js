@@ -1,11 +1,25 @@
 export const projects_data = [
   {
     photoUrl:
+      "https://user-images.githubusercontent.com/22618438/106356508-f57d3600-62f7-11eb-9677-8dcf6ef0e49d.png",
+    title: "Shortly",
+    tools: {
+      react: true,
+      styledComponents: true,
+    },
+    description:
+      "Made as solution for a Frontendmentor.io challenge, Shortly is a landing page for a link customization service that integrates the shrtco.de API for URL shortening. ",
+    githubUrl: "https://github.com/pklepa/url-shortening",
+    liveDemoUrl: "https://pklepa.github.io/url-shortening/",
+  },
+  {
+    photoUrl:
       "https://user-images.githubusercontent.com/22618438/105358697-6b91e680-5bee-11eb-914d-e89d3e681700.png",
     title: "Traffico",
     tools: {
       react: true,
       styledComponents: true,
+      framer: true,
     },
     description:
       "Originally designed on Figma, this is a Landing page for a fictonal traffic permit consultant filled with SVG animations.",
