@@ -1,19 +1,6 @@
 export const projects_data = [
   {
     photoUrl:
-      "https://user-images.githubusercontent.com/22618438/106356508-f57d3600-62f7-11eb-9677-8dcf6ef0e49d.png",
-    title: "Shortly",
-    tools: {
-      react: true,
-      styledComponents: true,
-    },
-    description:
-      "Made as solution for a Frontendmentor.io challenge, Shortly is a landing page for a link customization service that integrates the shrtco.de API for URL shortening. ",
-    githubUrl: "https://github.com/pklepa/url-shortening",
-    liveDemoUrl: "https://pklepa.github.io/url-shortening/",
-  },
-  {
-    photoUrl:
       "https://user-images.githubusercontent.com/22618438/105358697-6b91e680-5bee-11eb-914d-e89d3e681700.png",
     title: "Traffico",
     tools: {
@@ -42,6 +29,19 @@ export const projects_data = [
       "Fully featured blog with CMS Integration (Contentful) and comments with Facebook API. Developed on React with an Node/Express server on the backend.",
     githubUrl: "https://github.com/pklepa/pencil-blog",
     liveDemoUrl: "https://blog-pencil.herokuapp.com/",
+  },
+  {
+    photoUrl:
+      "https://user-images.githubusercontent.com/22618438/106356508-f57d3600-62f7-11eb-9677-8dcf6ef0e49d.png",
+    title: "Shortly",
+    tools: {
+      react: true,
+      styledComponents: true,
+    },
+    description:
+      "Made as solution for a Frontendmentor.io challenge, Shortly is a landing page for a link customization service that integrates the shrtco.de API for URL shortening. ",
+    githubUrl: "https://github.com/pklepa/url-shortening",
+    liveDemoUrl: "https://pklepa.github.io/url-shortening/",
   },
   {
     photoUrl:
@@ -113,47 +113,47 @@ export const projects_data = [
     githubUrl: "https://github.com/pklepa/battleship",
     liveDemoUrl: "https://pklepa.github.io/battleship/",
   },
-  {
-    photoUrl:
-      "https://user-images.githubusercontent.com/22618438/91083178-39209500-e620-11ea-9d6e-ed4a6720473b.png",
-    title: "Weather App",
-    tools: {
-      javascript: true,
-      materialize: true,
-      webpack: true,
-    },
-    description:
-      "Basic application to display weather data using OpenWeatherMap API. Main focus was practicing external API calls and processing into an app.",
-    githubUrl: "https://github.com/pklepa/weather-app",
-    liveDemoUrl: "https://pklepa.github.io/weather-app/",
-  },
-  {
-    photoUrl:
-      "https://user-images.githubusercontent.com/22618438/101835236-60e62b00-3b33-11eb-9fc7-325fabb16e52.png",
-    title: "Matsu-Sando",
-    tools: {
-      javascript: true,
-      webpack: true,
-    },
-    description:
-      "Fictional homepage for a small restaurant in Brazil. Main objective was to practice usage of modern development tools and techniques such as Webpack and ES6 Modules.",
-    githubUrl: "https://github.com/pklepa/small-restaurant",
-    liveDemoUrl: "https://pklepa.github.io/small-restaurant/",
-  },
-  {
-    photoUrl:
-      "https://user-images.githubusercontent.com/22618438/91084670-ba792700-e622-11ea-910f-f6d254f15370.png",
-    title: "sh*t-to-do",
-    tools: {
-      javascript: true,
-      materialize: true,
-      webpack: true,
-    },
-    description:
-      "Clean and simple to-do list web application. Used Materialize CSS framework for good effects.",
-    githubUrl: "https://github.com/pklepa/to-do",
-    liveDemoUrl: "https://pklepa.github.io/to-do/",
-  },
+  // {
+  //   photoUrl:
+  //     "https://user-images.githubusercontent.com/22618438/91083178-39209500-e620-11ea-9d6e-ed4a6720473b.png",
+  //   title: "Weather App",
+  //   tools: {
+  //     javascript: true,
+  //     materialize: true,
+  //     webpack: true,
+  //   },
+  //   description:
+  //     "Basic application to display weather data using OpenWeatherMap API. Main focus was practicing external API calls and processing into an app.",
+  //   githubUrl: "https://github.com/pklepa/weather-app",
+  //   liveDemoUrl: "https://pklepa.github.io/weather-app/",
+  // },
+  // {
+  //   photoUrl:
+  //     "https://user-images.githubusercontent.com/22618438/101835236-60e62b00-3b33-11eb-9fc7-325fabb16e52.png",
+  //   title: "Matsu-Sando",
+  //   tools: {
+  //     javascript: true,
+  //     webpack: true,
+  //   },
+  //   description:
+  //     "Fictional homepage for a small restaurant in Brazil. Main objective was to practice usage of modern development tools and techniques such as Webpack and ES6 Modules.",
+  //   githubUrl: "https://github.com/pklepa/small-restaurant",
+  //   liveDemoUrl: "https://pklepa.github.io/small-restaurant/",
+  // },
+  // {
+  //   photoUrl:
+  //     "https://user-images.githubusercontent.com/22618438/91084670-ba792700-e622-11ea-910f-f6d254f15370.png",
+  //   title: "sh*t-to-do",
+  //   tools: {
+  //     javascript: true,
+  //     materialize: true,
+  //     webpack: true,
+  //   },
+  //   description:
+  //     "Clean and simple to-do list web application. Used Materialize CSS framework for good effects.",
+  //   githubUrl: "https://github.com/pklepa/to-do",
+  //   liveDemoUrl: "https://pklepa.github.io/to-do/",
+  // },
 
   {
     photoUrl:
@@ -176,20 +176,8 @@ export const projects_data = [
       javascript: true,
     },
     description:
-      "Basic Pomodoro Technique clock in the browser. Made as a pair programming exercise.",
+      "Simple browser clock for using Pomodoro Technique (25 minutes of productive activity, 5 minutes of rest). The project is all in vanilla JavaScript and was made as a pair programming exercise with a fellow student.",
     githubUrl: "https://github.com/pklepa/pomodoro",
     liveDemoUrl: "https://pklepa.github.io/pomodoro",
-  },
-
-  {
-    photoUrl:
-      "https://user-images.githubusercontent.com/22618438/102663861-8ac5d000-4179-11eb-9fe6-edcc77d2c3e3.png",
-    title: "NY Times Article Clone",
-    tools: {
-      sass: true,
-    },
-    description: "Clone of an article page from The New York Times.",
-    githubUrl: "https://github.com/pklepa/nyt-article-clone",
-    liveDemoUrl: "https://pklepa.github.io/nyt-article-clone/",
   },
 ];
