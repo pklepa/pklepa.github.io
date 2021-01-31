@@ -65,9 +65,10 @@ function Projects() {
       <div className="top"></div>
 
       <motion.div className="middle">
-        {projects_data.map((project) => {
+        {projects_data.map((project, index) => {
           return (
             <ProjectContainer
+              key={`project-${index}`}
               exit="out"
               animate="in"
               initial="out"

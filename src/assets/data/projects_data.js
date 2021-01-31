@@ -39,7 +39,7 @@ export const projects_data = [
       styledComponents: true,
     },
     description:
-      "Made as solution for a Frontendmentor.io challenge, Shortly is a landing page for a link customization service that integrates the shrtco.de API for URL shortening. ",
+      "Shortly is a landing page for a link customization service that integrates the shrtco.de API for URL shortening. Made as solution for a Frontendmentor.io challenge. ",
     githubUrl: "https://github.com/pklepa/url-shortening",
     liveDemoUrl: "https://pklepa.github.io/url-shortening/",
   },
