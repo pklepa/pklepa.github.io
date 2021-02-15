@@ -25,6 +25,7 @@ import {
   MailIcon,
   MaterializeIcon,
   MongodbIcon,
+  NextIcon,
   NodeIcon,
   NpmIcon,
   ReactIcon,
@@ -106,6 +107,13 @@ function Projects() {
                     <Tag>
                       <ReactIcon />
                       <span>react</span>
+                    </Tag>
+                  )}
+
+                  {project.tools.next && (
+                    <Tag>
+                      <NextIcon />
+                      <span>next-js</span>
                     </Tag>
                   )}
 

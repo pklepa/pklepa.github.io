@@ -1,6 +1,21 @@
 export const projects_data = [
   {
     photoUrl:
+      "https://user-images.githubusercontent.com/22618438/107892064-9126bd00-6f1a-11eb-9f48-f8f564756383.png",
+    title: "CatWiki",
+    tools: {
+      react: true,
+      styledComponents: true,
+      framer: true,
+      next: true,
+    },
+    description:
+      "An information packed application about the various breeds of cats around the world. Blazing fast, this app is built with statically generated pages from pre-fetched, optimized API data using NextJS.",
+    githubUrl: "https://github.com/pklepa/cat-wiki",
+    liveDemoUrl: "https://cat-wiki.pklepa.vercel.app/",
+  },
+  {
+    photoUrl:
       "https://user-images.githubusercontent.com/22618438/105358697-6b91e680-5bee-11eb-914d-e89d3e681700.png",
     title: "Traffico",
     tools: {

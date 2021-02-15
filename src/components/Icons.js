@@ -24,6 +24,7 @@ import {
   Jest,
   Webpack,
   Mongodb,
+  NextDotJs,
 } from "styled-icons/simple-icons";
 import { ArrowLeftSquare, ArrowRightSquare } from "styled-icons/bootstrap";
 
@@ -31,6 +32,7 @@ export const GithubIcon = styled(Github)``;
 export const LinkedinIcon = styled(LinkedinSquare)``;
 export const MailIcon = styled(Mail)``;
 export const MongodbIcon = styled(Mongodb)``;
+export const NextIcon = styled(NextDotJs)``;
 export const NodeIcon = styled(Nodejs)``;
 export const NpmIcon = styled(LogoNpm)``;
 export const InstagramIcon = styled(Instagram)``;
