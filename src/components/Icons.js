@@ -18,6 +18,7 @@ import {
   LogoNpm,
   LogoSass,
 } from "styled-icons/ionicons-solid";
+
 import {
   Framer,
   StyledComponents,
@@ -26,6 +27,7 @@ import {
   Mongodb,
   NextDotJs,
 } from "styled-icons/simple-icons";
+
 import { ArrowLeftSquare, ArrowRightSquare } from "styled-icons/bootstrap";
 
 export const SocialIcons = {
@@ -57,10 +59,6 @@ export const GeneralIcons = {
   arrowRight: ArrowRightSquare,
 };
 
-export const GithubIcon = styled(Github)``;
-export const LinkedinIcon = styled(LinkedinSquare)``;
-export const MailIcon = styled(Mail)``;
-export const InstagramIcon = styled(Instagram)``;
 export const ArrowLeftIcon = styled(ArrowLeftSquare)``;
 export const ArrowRightIcon = styled(ArrowRightSquare)``;
 export const ArrowUpIcon = styled(ChevronUp)``;

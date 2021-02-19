@@ -8,7 +8,6 @@ import About from "./views/About";
 import Contact from "./views/Contact";
 import Home from "./views/Home";
 import Projects from "./views/Projects";
-import Temp from "./views/Temp";
 
 function Routes() {
   const location = useLocation();
@@ -43,10 +42,6 @@ function Routes() {
         <Switch location={location} key={location.pathname}>
           <Route exact path="/">
             <Home />
-          </Route>
-
-          <Route path="/temp">
-            <Temp />
           </Route>
 
           <Route path="/projects">
