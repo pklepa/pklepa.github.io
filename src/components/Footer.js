@@ -1,9 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styled from "styled-components";
-import { GithubIcon, InstagramIcon, LinkedinIcon, MailIcon } from "./Icons";
+import { SocialIcons } from "./Icons";
 
-function Footer({ props }) {
+function Footer() {
+  const socialLinks = {
+    github: "https://github.com/pklepa",
+    linkedin: "https://www.linkedin.com/in/pedro-klepa/",
+    instagram: "https://instagram.com/pklepa",
+    email: "mailto:pedro.klepa@gmail.com",
+  };
+
   return (
     <motion.div
       className="bottom"
@@ -13,22 +20,13 @@ function Footer({ props }) {
       transition={{ duration: 1, delay: 0.3 }}
     >
       <IconsContainer>
-        <a target="_blank" rel="noreferrer" href="https://github.com/pklepa">
-          <GithubIcon />
-        </a>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://www.linkedin.com/in/pedro-klepa/"
-        >
-          <LinkedinIcon />
-        </a>
-        <a target="_blank" rel="noreferrer" href="https://instagram.com/pklepa">
-          <InstagramIcon />
-        </a>
-        <a target="_blank" rel="noreferrer" href="mailto:pedro.klepa@gmail.com">
-          <MailIcon />
-        </a>
+        {Object.entries(socialLinks).map(([key, value]) => {
+          return (
+            <a target="_blank" rel="noreferrer" href={value}>
+              {SocialIcons[key]?.render()}
+            </a>
+          );
+        })}
       </IconsContainer>
     </motion.div>
   );
