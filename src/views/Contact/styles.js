@@ -162,27 +162,3 @@ export const Form = styled.form`
     align-self: center;
   }
 `;
-
-export const IconsContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  a {
-    margin-right: 12px;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
-  svg {
-    width: 32px;
-    color: ${(props) => props.theme.secondary};
-    transition: 400ms;
-
-    &:hover {
-      color: ${(props) => props.theme.highlight};
-    }
-  }
-`;
