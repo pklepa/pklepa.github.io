@@ -30,6 +30,7 @@ import {
   NpmIcon,
   ReactIcon,
   SassIcon,
+  SkillIcons,
   StyledComponentsIcon,
   WebpackIcon,
 } from "../../components/Icons";
@@ -105,7 +106,7 @@ function Projects() {
 
                   {project.tools.react && (
                     <Tag>
-                      <ReactIcon />
+                      {SkillIcons["react"].render()}
                       <span>react</span>
                     </Tag>
                   )}

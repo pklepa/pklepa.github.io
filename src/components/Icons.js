@@ -28,6 +28,33 @@ import {
 } from "styled-icons/simple-icons";
 import { ArrowLeftSquare, ArrowRightSquare } from "styled-icons/bootstrap";
 
+export const SocialIcons = {
+  github: Github,
+  linkedin: LinkedinSquare,
+  email: Mail,
+  instagram: Instagram,
+};
+
+export const SkillIcons = {
+  firebase: LogoFirebase,
+  "framer-motion": Framer,
+  jest: Jest,
+  mongodb: Mongodb,
+  "next-js": NextDotJs,
+  npm: LogoNpm,
+  react: ReactLogo,
+  sass: LogoSass,
+  "styled-components": StyledComponents,
+  "vanilla-js": Javascript,
+  webpack: Webpack,
+};
+
+export const GeneralIcons = {
+  arrowUp: ChevronUp,
+  arrowLeft: ArrowLeftSquare,
+  arrowRight: ArrowRightSquare,
+};
+
 export const GithubIcon = styled(Github)``;
 export const LinkedinIcon = styled(LinkedinSquare)``;
 export const MailIcon = styled(Mail)``;
