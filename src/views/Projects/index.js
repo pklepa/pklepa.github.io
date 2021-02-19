@@ -68,16 +68,20 @@ function Projects() {
               <ProjectImage src={project.photoUrl} alt="Project preview" />
               <ProjectDescription>
                 <h1>{project.title}</h1>
+
                 <IconsWrapper>
                   {project.tools.map((tool) => {
                     return (
-                      <Tag>
-                        {SkillIcons[tool].render()}
+                      <Tag key={tool}>
+                        {SkillIcons[tool]
+                          ? SkillIcons[tool].render()
+                          : SkillIcons.npm.render()}
                         <span>{tool}</span>
                       </Tag>
                     );
                   })}
                 </IconsWrapper>
+
                 <p>{project.description}</p>
 
                 <div className="buttons-wrapper">

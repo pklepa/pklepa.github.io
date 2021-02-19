@@ -36,11 +36,13 @@ export const SocialIcons = {
 };
 
 export const SkillIcons = {
+  "facebook-api": FacebookSquare,
   firebase: LogoFirebase,
   "framer-motion": Framer,
   jest: Jest,
   mongodb: Mongodb,
   "next-js": NextDotJs,
+  "node-js": Nodejs,
   npm: LogoNpm,
   react: ReactLogo,
   sass: LogoSass,
@@ -58,20 +60,7 @@ export const GeneralIcons = {
 export const GithubIcon = styled(Github)``;
 export const LinkedinIcon = styled(LinkedinSquare)``;
 export const MailIcon = styled(Mail)``;
-export const MongodbIcon = styled(Mongodb)``;
-export const NextIcon = styled(NextDotJs)``;
-export const NodeIcon = styled(Nodejs)``;
-export const NpmIcon = styled(LogoNpm)``;
 export const InstagramIcon = styled(Instagram)``;
-export const ReactIcon = styled(ReactLogo)``;
-export const FacebookIcon = styled(FacebookSquare)``;
-export const FirebaseIcon = styled(LogoFirebase)``;
-export const JestIcon = styled(Jest)``;
-export const JavascriptIcon = styled(Javascript)``;
-export const FramerIcon = styled(Framer)``;
-export const StyledComponentsIcon = styled(StyledComponents)``;
-export const SassIcon = styled(LogoSass)``;
-export const WebpackIcon = styled(Webpack)``;
 export const ArrowLeftIcon = styled(ArrowLeftSquare)``;
 export const ArrowRightIcon = styled(ArrowRightSquare)``;
 export const ArrowUpIcon = styled(ChevronUp)``;

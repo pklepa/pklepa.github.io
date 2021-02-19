@@ -19,23 +19,23 @@ export const projects_data = [
     githubUrl: "https://github.com/pklepa/traffico-landing",
     liveDemoUrl: "https://pklepa.github.io/traffico-landing/",
   },
-  // {
-  //   photoUrl:
-  //     "https://user-images.githubusercontent.com/22618438/104212638-574f2c00-542d-11eb-8edb-58bb4c0bb772.png",
-  //   title: "Pencil Blog",
-  //   tools: [
-  //     'node',
-  //     'express',
-  //     'react',
-  //     'sass',
-  //     'contentful-cms',
-  //     'facebook',
-  //   ],
-  //   description:
-  //     "Fully featured blog with CMS Integration (Contentful) and comments with Facebook API. Developed on React with an Node/Express server on the backend.",
-  //   githubUrl: "https://github.com/pklepa/pencil-blog",
-  //   liveDemoUrl: "https://blog-pencil.herokuapp.com/",
-  // },
+  {
+    photoUrl:
+      "https://user-images.githubusercontent.com/22618438/104212638-574f2c00-542d-11eb-8edb-58bb4c0bb772.png",
+    title: "Pencil Blog",
+    tools: [
+      "node-js",
+      "express",
+      "react",
+      "sass",
+      "contentful-cms",
+      "facebook-api",
+    ],
+    description:
+      "Fully featured blog with CMS Integration (Contentful) and comments with Facebook API. Developed on React with an Node/Express server on the backend.",
+    githubUrl: "https://github.com/pklepa/pencil-blog",
+    liveDemoUrl: "https://blog-pencil.herokuapp.com/",
+  },
   // {
   //   photoUrl:
   //     "https://user-images.githubusercontent.com/22618438/106356508-f57d3600-62f7-11eb-9677-8dcf6ef0e49d.png",
