@@ -1,13 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import { Container, ProfilePic, IconsContainer } from "./styles";
-import {
-  GithubIcon,
-  LinkedinIcon,
-  MailIcon,
-  InstagramIcon,
-} from "../../components/Icons";
+import { Container, ProfilePic } from "./styles";
 
 import Img from "../../assets/images/pk_draw.jpeg";
 import { pageTransition } from "../../utils/Animations";
@@ -34,12 +28,6 @@ function About() {
             the JavaScript stack of React and NodeJS, and from my background as
             an electrical engineer I'm well acquainted to bringing out solutions
             to complex problems.
-            {/* Passionate about learning, I see myself as a communicative and
-            upfront person who’s doesn’t refrain from asking questions. Our
-            ability to share knowledge and experiences drives me and I’ll always
-            be looking for a larger room to be around great people. I’m an
-            electrical engineer seeking opportunities to shift into the software
-            and web development industry. */}
           </p>
         </div>
 
