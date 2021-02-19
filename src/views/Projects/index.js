@@ -14,25 +14,11 @@ import {
 
 import {
   ArrowUpIcon,
-  FacebookIcon,
-  FirebaseIcon,
-  FramerIcon,
   GithubIcon,
   InstagramIcon,
-  JavascriptIcon,
-  JestIcon,
   LinkedinIcon,
   MailIcon,
-  MaterializeIcon,
-  MongodbIcon,
-  NextIcon,
-  NodeIcon,
-  NpmIcon,
-  ReactIcon,
-  SassIcon,
   SkillIcons,
-  StyledComponentsIcon,
-  WebpackIcon,
 } from "../../components/Icons";
 
 import { Tag } from "../../components/Tag";
@@ -83,103 +69,14 @@ function Projects() {
               <ProjectDescription>
                 <h1>{project.title}</h1>
                 <IconsWrapper>
-                  {project.tools.node && (
-                    <Tag>
-                      <NodeIcon />
-                      <span>node-js</span>
-                    </Tag>
-                  )}
-
-                  {project.tools.express && (
-                    <Tag>
-                      <NpmIcon />
-                      <span>express</span>
-                    </Tag>
-                  )}
-
-                  {project.tools.mongodb && (
-                    <Tag>
-                      <MongodbIcon />
-                      <span>mongodb</span>
-                    </Tag>
-                  )}
-
-                  {project.tools.react && (
-                    <Tag>
-                      {SkillIcons["react"].render()}
-                      <span>react</span>
-                    </Tag>
-                  )}
-
-                  {project.tools.next && (
-                    <Tag>
-                      <NextIcon />
-                      <span>next-js</span>
-                    </Tag>
-                  )}
-
-                  {project.tools.firebase && (
-                    <Tag>
-                      <FirebaseIcon />
-                      <span>firebase</span>
-                    </Tag>
-                  )}
-
-                  {project.tools.jest && (
-                    <Tag>
-                      <JestIcon />
-                      <span>jest</span>
-                    </Tag>
-                  )}
-
-                  {project.tools.styledComponents && (
-                    <Tag>
-                      <StyledComponentsIcon />
-                      <span>styled-components</span>
-                    </Tag>
-                  )}
-
-                  {project.tools.framer && (
-                    <Tag>
-                      <FramerIcon />
-                      <span>framer-motion</span>
-                    </Tag>
-                  )}
-
-                  {project.tools.webpack && (
-                    <Tag>
-                      <WebpackIcon />
-                      <span>webpack</span>
-                    </Tag>
-                  )}
-
-                  {project.tools.materialize && (
-                    <Tag>
-                      <MaterializeIcon />
-                      <span>materialize-css</span>
-                    </Tag>
-                  )}
-
-                  {project.tools.javascript && (
-                    <Tag>
-                      <JavascriptIcon />
-                      <span>vanilla-js</span>
-                    </Tag>
-                  )}
-
-                  {project.tools.sass && (
-                    <Tag>
-                      <SassIcon />
-                      <span>sass</span>
-                    </Tag>
-                  )}
-
-                  {project.tools.facebook && (
-                    <Tag>
-                      <FacebookIcon />
-                      <span>facebook-api</span>
-                    </Tag>
-                  )}
+                  {project.tools.map((tool) => {
+                    return (
+                      <Tag>
+                        {SkillIcons[tool].render()}
+                        <span>{tool}</span>
+                      </Tag>
+                    );
+                  })}
                 </IconsWrapper>
                 <p>{project.description}</p>
 
