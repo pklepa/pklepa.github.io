@@ -35,7 +35,7 @@ const GlobalStyle = createGlobalStyle`
 
   * {
     box-sizing: border-box;
-    cursor: none !important;
+    ${"" /* cursor: none !important; */}
   }
 `;
 
@@ -50,40 +50,40 @@ const Container = styled.div`
   background-color: ${(props) => props.theme.primary};
 `;
 
-const Cursor = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  transform: translate3d(0, 0, 0);
-  pointer-events: none;
-  overflow: hidden;
+// const Cursor = styled.div`
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   transform: translate3d(0, 0, 0);
+//   pointer-events: none;
+//   overflow: hidden;
 
-  width: 15px;
-  height: 15px;
-  border: 3px solid ${(props) => props.theme.highlight};
-  border-radius: 50%;
+//   width: 15px;
+//   height: 15px;
+//   border: 3px solid ${(props) => props.theme.highlight};
+//   border-radius: 50%;
 
-  z-index: 1000;
-`;
+//   z-index: 1000;
+// `;
 
 function App() {
-  const cursorRef = useRef(null);
+  // const cursorRef = useRef(null);
 
-  function onMouseMove(e) {
-    const { clientX, clientY } = e;
-    const mouseX = clientX - cursorRef.current.clientWidth / 2;
-    const mouseY = clientY - cursorRef.current.clientHeight / 2;
+  // function onMouseMove(e) {
+  //   const { clientX, clientY } = e;
+  //   const mouseX = clientX - cursorRef.current.clientWidth / 2;
+  //   const mouseY = clientY - cursorRef.current.clientHeight / 2;
 
-    cursorRef.current.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
-  }
+  //   cursorRef.current.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+  // }
 
-  useEffect(() => {
-    document.addEventListener("mousemove", onMouseMove);
+  // useEffect(() => {
+  //   document.addEventListener("mousemove", onMouseMove);
 
-    return () => {
-      document.removeEventListener("mousemove", onMouseMove);
-    };
-  }, []);
+  //   return () => {
+  //     document.removeEventListener("mousemove", onMouseMove);
+  //   };
+  // }, []);
 
   return (
     <ThemeProvider theme={theme}>
@@ -92,7 +92,7 @@ function App() {
 
       <BrowserRouter>
         <Container>
-          <Cursor ref={cursorRef} />
+          {/* <Cursor ref={cursorRef} /> */}
           <Routes />
         </Container>
       </BrowserRouter>
